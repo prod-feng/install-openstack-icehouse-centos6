@@ -14,9 +14,11 @@ The repository is here: https://repos.fedorapeople.org/repos/openstack/EOL/opens
 
 >packstack --allinone
 
-*** packstack by defaule uses ssh port 22. If you use different port, it can be a problem. The workaround can be easy:
+Packstack by defaule uses ssh port 22. If you use different port, it can be a problem. The workaround can be easy:
 In /etc/ssh/ssh_config, add one line after line of "Host *"
-   Port your-port-number
+
+>Host *
+>     Port your-port-number
 
 The file /usr/lib/python2.6/site-packages/packstack/installer/validators.py also needs to be updated with the new ssh port number:
 
@@ -33,7 +35,7 @@ Then it will be fine.
 
 Besides, if you run the installation as root, you may want to set "PermitRootLogin=yes" in /etc/ssh/sshd_config, and then restart sshd.
 
-You'd better start from a clean OS. If you have mysql, qpod, etc., running on your computer, you might need to stop them when you run "Allinone" Icehouse.
+You'd better start from a clean OS. If you have mysql, qpid, etc., running on your computer, you might need to stop them when you run "Allinone" Icehouse.
 
 
 Note:
@@ -68,6 +70,8 @@ find the running mysqld processid:
 make sure no mysqld is running.
 
 Then run " packstack --allinone" again.
+
+Or you can run yum to erase mysql and mysql-libs, and delete all file in /var/lib/mysql
 
 2.
 
