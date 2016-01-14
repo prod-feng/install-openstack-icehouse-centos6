@@ -6,7 +6,9 @@ You may need libgmp >5 to run glance. So you can install it before start.
 
 You can Google  and download the source file of GMP. Then run:
   /configure --prefix=/usr --libdir=/usr/lib64  (if you have 2 64bit machine)
+  
   gmake
+  
   gmake install
   
 1. 
