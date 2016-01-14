@@ -47,7 +47,7 @@ You'd better start from a clean OS. If you have mysql, qpid, etc., running on yo
 
 Note:
 
-1. If you have the database error during installation, like:
+1. If you have the database error during installation(for example, the packstack failed at some poit, and when you try to run the installation again), like:
 
 >>ERROR : Error appeared during Puppet run: X.X.X.X_mariadb.pp
 >>Error: mysqladmin -u root  password 'fa5a74a6e6dd4ba4' returned 1 instead of one of [0]
