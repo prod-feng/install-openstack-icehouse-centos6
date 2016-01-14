@@ -78,7 +78,7 @@ make sure no mysqld is running.
 
 Then run " packstack --allinone" again.
 
-Or you can run yum to erase mysql and mysql-libs, and delete all files in /var/lib/mysql
+Or you can run yum to erase mysql and mysql-libs, and delete all files in /var/lib/mysql(hope packstack can be smarter).
 
 2.
 
@@ -98,7 +98,7 @@ You can add two lines in: /usr/lib/python2.6/site-packages/packstack/modules/pup
     'Keystone'
 >)
 
-Then, clear the mysql database root password and try again.
+Then, clear the mysql database root password and try again(Not sure what's the root cause, while the workaround works fine for me).
 
 Done.
 
