@@ -18,7 +18,7 @@ Packstack by defaule uses ssh port 22. If you use different port, it can be a pr
 In /etc/ssh/ssh_config, add one line after line of "Host *"
 
 >Host *
->     Port your-port-number
+     Port your-port-number
 
 The file /usr/lib/python2.6/site-packages/packstack/installer/validators.py also needs to be updated with the new ssh port number:
 
