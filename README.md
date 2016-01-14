@@ -36,7 +36,7 @@ The file /usr/lib/python2.6/site-packages/packstack/installer/validators.py also
     
     try:
     
-        touch_port(param.strip(), $myportnum)
+        touch_port(param.strip(), $put-your-ssh-port-num-here)
 
 Then it will be fine.
 
