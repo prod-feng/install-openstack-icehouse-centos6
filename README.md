@@ -25,11 +25,17 @@ The file /usr/lib/python2.6/site-packages/packstack/installer/validators.py also
 
 >def validate_ssh(param, options=None):
 >>    """
+
 >>    Raises ParamValidationError if provided host does not listen
+
 >>    on port 22??.
+
 >>    """
+
 >>    options = options or []
+
 >>    try:
+
 >>        touch_port(param.strip(), $put-your-ssh-port-num-here)
 
 Then it will be fine.
