@@ -78,7 +78,7 @@ make sure no mysqld is running.
 
 Then run " packstack --allinone" again.
 
-Or you can run yum to erase mysql and mysql-libs, and delete all file in /var/lib/mysql
+Or you can run yum to erase mysql and mysql-libs, and delete all files in /var/lib/mysql
 
 2.
 
