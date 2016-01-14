@@ -114,4 +114,8 @@ Then, clear the mysql database root password and try again(Not sure what's the r
 
 Done.
 
+P.S.
+
+If you failed at some point and openstack-glance-api started already, you may need to manully kill the processes related to it and start again. Each time you need to clean the mysql database's root password.
+
 
