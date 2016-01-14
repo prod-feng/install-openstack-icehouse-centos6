@@ -5,12 +5,14 @@ This is the steps that I did to isnatll Openstack Icehouse on Centos 6.7.
 You may need libgmp >5 to run glance. So you can install it before start.
 
 You can Google  and download the source file of GMP. Then run:
-  /configure --prefix=/usr --libdir=/usr/lib64  (if you have 2 64bit machine)
+  >/configure --prefix=/usr --libdir=/usr/lib64  (if you have 2 64bit machine)
+  >
+  >gmake
+  >
+  >gmake install
   
-  gmake
-  
-  gmake install
-  
+OK, let's start:
+
 1. 
 > yum install https://repos.fedorapeople.org/repos/openstack/EOL/openstack-icehouse/rdo-release-icehouse-4.noarch.rpm
 
