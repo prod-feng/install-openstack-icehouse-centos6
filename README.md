@@ -93,15 +93,10 @@ You can add two lines in: /usr/lib/python2.6/site-packages/packstack/modules/pup
 >...
 
     'NetworkManager is not running|'
-    
     #feng1
-    
     'Expected|'
-    
     #feng2
-    
     'Keystone'
-    
 >)
 
 Then, clear the mysql database root password and try again(Not sure what's the root cause, while the workaround works fine for me).
