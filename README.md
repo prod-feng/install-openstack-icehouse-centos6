@@ -123,6 +123,7 @@ For example, you can stop all openstack related service:
 >for script in /etc/init.d/openstack-*;
 
 >do
+
  >   $script stop;
 
 >done
@@ -130,6 +131,7 @@ For example, you can stop all openstack related service:
 >for script in /etc/init.d/neutron-*;
 
 >do
+
 >    $script stop;
 
 >done
