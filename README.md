@@ -136,4 +136,5 @@ For example, you can stop all openstack related service:
 
 >done
 
+Make sure all related services/processes stopped. You may have to "kill -9" manually some remaining processes.
 
