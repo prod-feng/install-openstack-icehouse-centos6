@@ -1,6 +1,6 @@
 # install-openstack-icehouse-centos6
 
-This is the steps that I did to isnatll Openstack Icehouse on Centos 6.7.
+The following are the steps that I did to isnatll Openstack Icehouse on Centos 6.7.
 
 You may need libgmp >5 to run glance. So you can install it before start(Centos 6 has gmp 4.3).
 
