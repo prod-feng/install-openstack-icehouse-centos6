@@ -118,4 +118,20 @@ P.S.
 
 If you failed at some point and openstack-glance-api started already, you may need to manully kill the processes related to it and start again. Each time you need to clean the mysql database's root password.
 
+For example, you can stop all openstack related service:
+
+>for script in /etc/init.d/openstack-*;
+
+>do
+ >   $script stop;
+
+>done
+
+>for script in /etc/init.d/neutron-*;
+
+>do
+>    $script stop;
+
+>done
+
 
