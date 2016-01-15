@@ -138,3 +138,14 @@ For example, you can stop all openstack related service:
 
 Make sure all related services/processes stopped. You may have to "kill -9" manually some remaining processes.
 
+Also, if you have an error on Swift:
+
+>Error: Execution of '/usr/bin/swift-ring-builder /etc/swift/object.builder add r1z1-x.x.x.x:6000/swift_loopback 10.00' returned 2: Device 0 already uses x.x.x.x:6000/swift.
+
+You can do:
+
+>yum erase openstack-swift
+
+> rm -r /et/swift
+
+and then run packstack again.
