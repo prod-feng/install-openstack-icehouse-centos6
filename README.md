@@ -2,7 +2,7 @@
 
 The following are the steps that I did to isnatll Openstack Icehouse on Centos 6.7.
 
-You may need libgmp >5 to run glance. So you can install it before start(Centos 6 has gmp 4.3, the real problem I had was I have some juno packages installed. I had to clean all of them).
+You may need libgmp >5 to run glance. So you can install it before start(Centos 6 has gmp 4.3, the real problem I had was I had some juno packages installed. I had to clean all of them).
 
 You can Google  and download the source file of GMP. Then run:
   >./configure --prefix=/usr --libdir=/usr/lib64  (if you have 2 64bit machine)
