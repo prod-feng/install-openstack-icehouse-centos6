@@ -9,7 +9,14 @@ You can Google  and download the source file of GMP. Then run:
   >
   >gmake
   >
-  >gmake install
+  >gmake check 
+  >
+  >gmake install 
+  >
+  <libtool --finish /usr/lib64
+  >
+  >pip install --ignore-installed PyCrypto 
+
   
 OK, let's start:
 
@@ -91,26 +98,9 @@ Then run " packstack --allinone" again.
 
 Or you can run yum to erase mysql and mysql-libs, and delete all files in /var/lib/mysql(hope packstack can be smarter).
 
-2.
+The other way is to run packstack using the answer file generated from last run, so you do not need to worry about mysql password stuffs:
 
-If you met error at the stage of installing Keystone:
-
->Error: /Stage[main]/Keystone::Roles::Admin/Keystone_role[_member_]: Could not evaluate: Expected 2 columns for role row, found 0. Line
-
-You can add two lines in: /usr/lib/python2.6/site-packages/packstack/modules/puppet.py
-
->re_ignore = re.compile(
-
->...
-
-    'NetworkManager is not running|'
-    #feng1
-    'Expected|'
-    #feng2
-    'Keystone'
->)
-
-Then, clear the mysql database root password and try again(Not sure what's the root cause, while the workaround works fine for me).
+>packstack  --answer-file=packstack-answers-??????.txt
 
 Done.
 
