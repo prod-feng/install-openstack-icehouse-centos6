@@ -13,7 +13,7 @@ You can Google  and download the source file of GMP. Then run:
   >
   >gmake install 
   >
-  <libtool --finish /usr/lib64
+  >libtool --finish /usr/lib64
   >
   >pip install --ignore-installed PyCrypto 
 
