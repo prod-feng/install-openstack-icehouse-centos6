@@ -106,7 +106,7 @@ Done.
 
 P.S.
 
-If you failed at some point and openstack-glance-api started already, you may need to manully kill the processes related to it and start again. Each time you need to clean the mysql database's root password.
+1. If you failed at some point and openstack-glance-api started already, you may need to manully kill the processes related to it and start again. Each time you need to clean the mysql database's root password.
 
 For example, you can stop all openstack related service:
 
@@ -128,7 +128,7 @@ For example, you can stop all openstack related service:
 
 Make sure all related services/processes stopped. You may have to "kill -9" manually some remaining processes.
 
-Also, if you have an error on Swift:
+2. Also, if you have an error on Swift:
 
 >Error: Execution of '/usr/bin/swift-ring-builder /etc/swift/object.builder add r1z1-x.x.x.x:6000/swift_loopback 10.00' returned 2: Device 0 already uses x.x.x.x:6000/swift.
 
@@ -139,3 +139,8 @@ You can do:
 > rm -r /et/swift
 
 and then run packstack again.
+
+3. If you can not start nova_compute service, you might need to ucommnet one line in /etc/libvirt/libvirtd.conf:
+
+> #auth_unix_rw = "none" 
+
