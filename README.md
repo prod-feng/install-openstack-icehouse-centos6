@@ -142,7 +142,7 @@ and then run packstack again.
 
 3. If you can not start nova_compute service, you might need to ucommnet one line in /etc/libvirt/libvirtd.conf:
 
-> #auth_unix_rw = "none" 
+>> auth_unix_rw = "none" 
 
 4. Libvirtd. You may need to dowload the recent version of libvirtd and compiled it from the source:
 
@@ -163,7 +163,7 @@ and then run packstack again.
   
    Use virt-mamager creates image, and then:
 
->glance image-create --name='cent image' --is-public=true  --container-format=bare --disk-format=qcow2 >/var/lib/libvirt/images/vm01.img
+>glance image-create --name='cent image' --is-public=true  --container-format=bare --disk-format=qcow2  </var/lib/libvirt/images/vm01.img
 
 
   Then run instance OK.
