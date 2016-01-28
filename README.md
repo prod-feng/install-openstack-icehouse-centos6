@@ -154,5 +154,18 @@ and then run packstack again.
 >
 >sudo ldconfig
 
+5 openstack-dashboard 1.5 seems doe not work well with Neutron, erased it, and installed an older version:
+
+> yum install openstack-dashboard-2014.1.3-1.el6.noarch
+
+
+6. Failed to create image and run instance using dashboard.
+  
+   Use virt-mamager creates image, and then:
+
+>glance image-create --name='cent image' --is-public=true  --container-format=bare --disk-format=qcow2 >/var/lib/libvirt/images/vm01.img
+
+
+  Then run instance OK.
 
   
