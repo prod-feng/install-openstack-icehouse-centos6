@@ -106,7 +106,7 @@ Done.
 
 P.S.
 
-1. If you failed at some point and openstack-glance-api started already, you may need to manully kill the processes related to it and start again. Each time you need to clean the mysql database's root password.
+1) If you failed at some point and openstack-glance-api started already, you may need to manully kill the processes related to it and start again. Each time you need to clean the mysql database's root password.
 
 For example, you can stop all openstack related service:
 
@@ -128,7 +128,7 @@ For example, you can stop all openstack related service:
 
 Make sure all related services/processes stopped. You may have to "kill -9" manually some remaining processes.
 
-2. Also, if you have an error on Swift:
+2) Also, if you have an error on Swift:
 
 >Error: Execution of '/usr/bin/swift-ring-builder /etc/swift/object.builder add r1z1-x.x.x.x:6000/swift_loopback 10.00' returned 2: Device 0 already uses x.x.x.x:6000/swift.
 
@@ -140,11 +140,11 @@ You can do:
 
 and then run packstack again.
 
-3. If you can not start nova_compute service, you might need to ucommnet one line in /etc/libvirt/libvirtd.conf:
+3) If you can not start nova_compute service, you might need to ucommnet one line in /etc/libvirt/libvirtd.conf:
 
 >> auth_unix_rw = "none" 
 
-4.  Libvirtd. You may need to dowload the recent version of libvirtd and compiled it from the source:
+4)  Libvirtd. You may need to dowload the recent version of libvirtd and compiled it from the source:
 
 >./configure --prefix=/usr --libdir=/usr/lib64  --with-xen   --with-xen-inotify --with-yajl
 >
@@ -154,12 +154,12 @@ and then run packstack again.
 >
 >sudo ldconfig
 
-5. openstack-dashboard 1.5 seems doe not work well with Neutron, erased it, and installed an older version:
+5) openstack-dashboard 1.5 seems doe not work well with Neutron, erased it, and installed an older version:
 
 > yum install openstack-dashboard-2014.1.3-1.el6.noarch
 
 
-6. Failed to create image and run instance using dashboard.
+6) Failed to create image and run instance using dashboard.
   
    Use virt-mamager creates image, and then:
 
