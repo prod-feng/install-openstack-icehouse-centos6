@@ -144,7 +144,7 @@ and then run packstack again.
 
 >> auth_unix_rw = "none" 
 
-4. Libvirtd. You may need to dowload the recent version of libvirtd and compiled it from the source:
+4.  Libvirtd. You may need to dowload the recent version of libvirtd and compiled it from the source:
 
 >./configure --prefix=/usr --libdir=/usr/lib64  --with-xen   --with-xen-inotify --with-yajl
 >
@@ -154,7 +154,7 @@ and then run packstack again.
 >
 >sudo ldconfig
 
-5 openstack-dashboard 1.5 seems doe not work well with Neutron, erased it, and installed an older version:
+5. openstack-dashboard 1.5 seems doe not work well with Neutron, erased it, and installed an older version:
 
 > yum install openstack-dashboard-2014.1.3-1.el6.noarch
 
