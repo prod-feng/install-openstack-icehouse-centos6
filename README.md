@@ -20,15 +20,15 @@ You can Google  and download the source file of GMP. Then run:
   
 OK, let's start:
 
-1. 
+I) 
 > yum install https://repos.fedorapeople.org/repos/openstack/EOL/openstack-icehouse/rdo-release-icehouse-4.noarch.rpm
 
 The repository is here: https://repos.fedorapeople.org/repos/openstack/EOL/openstack-icehouse/epel-6/
 
-2. 
+II)
 > yum install openstack-packstack
 
-3.
+III)
 
 >packstack --allinone
 
@@ -65,7 +65,7 @@ You'd better start from a clean OS. If you have mysql, qpid, etc., running on yo
 
 Note:
 
-1. If you have the database error during installation(for example, the packstack failed at some poit, and when you try to run the installation again), like:
+1) If you have the database error during installation(for example, the packstack failed at some poit, and when you try to run the installation again), like:
 
 >>ERROR : Error appeared during Puppet run: X.X.X.X_mariadb.pp
 >>Error: mysqladmin -u root  password 'fa5a74a6e6dd4ba4' returned 1 instead of one of [0]
@@ -106,7 +106,7 @@ Done.
 
 P.S.
 
-1) If you failed at some point and openstack-glance-api started already, you may need to manully kill the processes related to it and start again. Each time you need to clean the mysql database's root password.
+1a) If you failed at some point and openstack-glance-api started already, you may need to manully kill the processes related to it and start again. Each time you need to clean the mysql database's root password.
 
 For example, you can stop all openstack related service:
 
